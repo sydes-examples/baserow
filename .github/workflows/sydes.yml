@@ -24,6 +24,7 @@ jobs:
       sydes_git_ref: 4834647
       renderer_ref: runtime-evidence
       runner: macos-15
+      timeout_minutes: 120
       # The repository's own test environment: its locked backend virtualenv
       # (outside the analyzed tree) and a local PostgreSQL.
       runtime_setup: |
