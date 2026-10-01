@@ -19,12 +19,11 @@ jobs:
     with:
       repo_alias: app
       model: openai:gpt-5.1
-      recovery_route_context: true
-      recovery_graph_path_search: true
+      # Validating the runtime-evidence path; AI recovery alone takes 30-40+ min here.
+      ai_recovery: false
       sydes_git_ref: 4834647
       renderer_ref: runtime-evidence
       runner: macos-15
-      timeout_minutes: 120
       # The repository's own test environment: its locked backend virtualenv
       # (outside the analyzed tree) and a local PostgreSQL.
       runtime_setup: |
