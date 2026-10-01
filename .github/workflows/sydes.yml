@@ -21,7 +21,7 @@ jobs:
       model: openai:gpt-6.1-sol
       # Validating the runtime-evidence path; AI recovery alone takes 30-40+ min here.
       ai_recovery: false
-      sydes_git_ref: 51b7561
+      sydes_git_ref: d9b7080
       renderer_ref: runtime-evidence
       runner: macos-15
       # The repository's own test environment: its locked backend virtualenv
